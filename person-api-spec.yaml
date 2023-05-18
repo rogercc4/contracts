@@ -36,12 +36,14 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/PersonInput'
-            example:
-              dni: "987654321"
-              name: "Jane"
-              surname: "Smith"
-              address: "456 Elm St"
-              birthDate: "1995-06-15"
+            examples:
+              new_person:
+                value:
+                  - dni: 45678901
+                    name: Ricardo
+                    surname: Sanchez
+                    address: Su nueva casa 678
+                    birthDate: 1988-01-01
       responses:
         '201':
           description: Created
@@ -49,12 +51,14 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Person'
-              example:
-                dni: "987654321"
-                name: "Jane"
-                surname: "Smith"
-                address: "456 Elm St"
-                birthDate: "1995-06-15"
+              examples:
+                new_person:
+                  value:
+                  - dni: 45678901
+                    name: Ricardo
+                    surname: Sanchez
+                    address: Su nueva casa 678
+                    birthDate: 1988-01-01
   /people/{id}:
     get:
       summary: Retrieve a person by ID
