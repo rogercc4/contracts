@@ -39,11 +39,11 @@ paths:
             examples:
               new_person:
                 value:
-                  - dni: 45678901
-                    name: Ricardo
-                    surname: Sanchez
-                    address: Su nueva casa 678
-                    birthDate: 1988-01-01
+                  dni: 45678901
+                  name: Ricardo
+                  surname: Sanchez
+                  address: Su nueva casa 678
+                  birthDate: 1988-01-01
       responses:
         '201':
           description: Created
@@ -54,7 +54,7 @@ paths:
               examples:
                 new_person:
                   value:
-                  - dni: 45678901
+                    dni: 45678901
                     name: Ricardo
                     surname: Sanchez
                     address: Su nueva casa 678
